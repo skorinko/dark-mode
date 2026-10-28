@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dimly: dark mode for every website in Safari</title>
+  <meta name="description" content="A Safari extension for Mac that puts every website in dark mode, with no white flash, no double-darkening of dark sites, and photos left alone. $1.99 once, no data collected.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dimly: Dimly">
+  <meta property="og:description" content="Every website in dark mode. No white flash, photos stay photos, text stays readable.">
+  <meta property="og:url" content="https://skorinko.github.io/dark-mode/">
+  <meta property="og:image" content="https://skorinko.github.io/dark-mode/img/og.jpg">
+  <link rel="canonical" href="https://skorinko.github.io/dark-mode/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/icon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="">Dimly</a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#pricing">Pricing</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a class="btn btn-primary btn-small" href="#pricing">Get it</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow"><img src="img/icon.png" alt="">A Safari extension for Mac</p>
+      <h1>The dark mode Safari is missing.</h1>
+      <p class="lead">Every website in dark mode, the moment your Mac is. No white flash while pages load, no darkening sites that are already dark, and photos that still look like photos.</p>
+      <div class="cta">
+        <a class="btn btn-primary" data-buy="Buy on the Mac App Store · $1.99" href="#pricing"><span data-buy-label>Coming soon to the Mac App Store</span></a>
+        <a class="btn btn-ghost" href="#features">See what it does</a>
+      </div>
+      <p class="fine">$1.99 once · macOS 14 or later · No data collected</p>
+
+      <div class="frame">
+        <div class="frame-bar">
+          <div class="frame-dots"><i></i><i></i><i></i></div>
+          <div class="frame-url">ledger.example.com/science/night-sky</div>
+          <div class="frame-spacer"></div>
+        </div>
+        <div class="slider" id="compare">
+          <img src="img/1-hero-light.jpg" width="2000" height="948" alt="A news article in its original light design">
+          <img class="after" src="img/1-hero.jpg" width="2000" height="948" alt="The same article in dark mode">
+          <span class="slider-line" aria-hidden="true"><b>⇆</b></span>
+          <span class="slider-label before">Original</span><span class="slider-label after">Dimly</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare the original and dark versions">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="features" class="soft">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Dark mode that gets the details right</h2>
+        <p>The things that make other dark mode extensions annoying, handled.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-copy">
+          <p class="kicker">No white flash</p>
+          <h3>Dark from the very first frame</h3>
+          <p>Most dark mode extensions let each page appear white, then darken it a moment later. Dimly has Safari paint a dark background before the page shows, then switches straight to the site's dark theme, remembered from your last visit.</p>
+          <ul class="ticks">
+            <li>Text checked against what's behind it, and lifted when it's hard to read</li>
+            <li>Surfaces keep their depth, brand colors keep their hue</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="img/1-hero.jpg" width="2000" height="948" alt="A news site in dark mode with its red accents kept" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip">
+        <div class="feature-copy">
+          <p class="kicker">Smart about every site</p>
+          <h3>Leaves dark sites alone</h3>
+          <p>Sites that are already dark keep their own design. Sites that have a dark theme get it, even when your Mac is in Light mode. If a site is ever misjudged, one click corrects it.</p>
+          <ul class="ticks">
+            <li>Checks what the page declares, and what it actually looks like</li>
+            <li>Remembers its verdict, so known dark sites are never touched</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="img/4-already-dark.jpg" width="2000" height="948" alt="A code hosting site that is dark on its own, left unchanged" loading="lazy"></div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-copy">
+          <p class="kicker">Photos stay photos</p>
+          <h3>Pictures are never inverted</h3>
+          <p>Backgrounds and text go dark. Photos and videos are dimmed a touch so they don't glare, by as much as you like. Small dark icons that would vanish are flipped to stay visible.</p>
+        </div>
+        <div class="shot"><img src="img/3-photos.jpg" width="2000" height="948" alt="A photo journal in dark mode with natural-looking photos" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip">
+        <div class="feature-copy">
+          <p class="kicker">You're in charge</p>
+          <h3>Fix any site yourself</h3>
+          <p>If something looks wrong, point at it: keep its original colors, invert it, or hide it. The fix is saved for that site and can be undone. Copy your fixes to share them.</p>
+        </div>
+        <div class="shot"><img src="img/5-fix.jpg" width="2000" height="948" alt="Choosing what to do with a newsletter box on a dark page" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>And all the small things</h2>
+      </div>
+      <div class="grid">
+        <div class="tile"><div class="icon"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5v11a5.5 5.5 0 0 1 0-11Z"/></svg></div><h3>Follows your Mac</h3><p>Dark when macOS is dark, light when it's light. Or always on.</p></div>
+        <div class="tile"><div class="icon"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM7.25.75a.75.75 0 0 1 1.5 0v1.5a.75.75 0 0 1-1.5 0Zm0 13a.75.75 0 0 1 1.5 0v1.5a.75.75 0 0 1-1.5 0ZM.75 7.25h1.5a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1 0-1.5Zm13 0h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5Z"/></svg></div><h3>Sunset to sunrise</h3><p>Worked out from your time zone, no location access. Or set your own hours.</p></div>
+        <div class="tile"><div class="icon"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M1.75 3h12.5c.97 0 1.75.78 1.75 1.75v6.5A1.75 1.75 0 0 1 14.25 13H1.75A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.78.78 3 1.75 3ZM3 6v1.5h1.5V6Zm3 0v1.5h1.5V6Zm3 0v1.5h1.5V6Zm3 0v1.5h1.5V6ZM4 9.5V11h8V9.5Z"/></svg></div><h3>One key per site</h3><p><kbd>⌃</kbd><kbd>⇧</kbd><kbd>D</kbd> switches the site you're on. <kbd>⌃</kbd><kbd>⇧</kbd><kbd>O</kbd> peeks at the original.</p></div>
+        <div class="tile"><div class="icon"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 2h12v2H9v10H7V4H2Z"/></svg></div><h3>Readable text</h3><p>Every text color meets a contrast floor, even at lower brightness.</p></div>
+        <div class="tile"><div class="icon"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M9.5 0 3 9h4.5L6 16l7-9.5H8.5Z"/></svg></div><h3>Fast on big pages</h3><p>Huge, constantly changing pages switch to a lighter mode automatically.</p></div>
+        <div class="tile"><div class="icon"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg></div><h3>Private</h3><p>No account, no analytics, no data collected. Settings stay on your Mac.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="soft">
+    <div class="wrap">
+      <div class="price-card">
+        <img src="img/icon.png" alt="">
+        <h2>Dimly: Dimly</h2>
+        <p class="price">$1.99 <small>once</small></p>
+        <ul class="ticks">
+          <li>One-time purchase, no subscription</li>
+          <li>Every feature included</li>
+          <li>macOS 14 or later, Apple silicon and Intel</li>
+          <li>Free updates</li>
+        </ul>
+        <div><a class="btn btn-primary" data-buy="Buy on the Mac App Store" href="#pricing"><span data-buy-label>Coming soon to the Mac App Store</span></a></div>
+        <p class="fine">Prices in other countries are set by the App Store.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Why does it need access to every website?</summary>
+          <p>Because it restyles whichever page you're looking at. Safari asks before an extension can change a page; allowing it everywhere means every site goes dark without asking each time. It reads pages only to restyle them, on your Mac, and sends nothing anywhere.</p>
+        </details>
+        <details>
+          <summary>What happens on sites that already have a dark mode?</summary>
+          <p>They keep it. If a site is dark on its own, Dimly leaves it alone. If it has a dark theme that only shows when your Mac is dark, that theme is used. If a site is misjudged, open the toolbar popup and choose "This site is already dark" or "Darken it anyway".</p>
+        </details>
+        <details>
+          <summary>Will it slow Safari down?</summary>
+          <p>On most pages you won't notice it. Very large pages that keep changing their styles are switched to a lighter mode automatically, and you can switch any site to it yourself from the popup.</p>
+        </details>
+        <details>
+          <summary>Something looks wrong on a site. What can I do?</summary>
+          <p>In the toolbar popup, open "Looks wrong on this site?". You can mark the site as already dark, switch it to simple mode, or use "Fix this site" to keep, invert or hide a single element. You can also switch dark mode off for that site.</p>
+        </details>
+        <details>
+          <summary>What data does it collect?</summary>
+          <p>None. It has no analytics, no tracking and no account, and it never sends anything to the developer. Read the <a href="privacy.html">privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>Can I hide the toolbar button?</summary>
+          <p>Yes. Choose View, then Customize Toolbar, in Safari and drag the button off. Dark mode keeps working, and <kbd>⌃</kbd><kbd>⇧</kbd><kbd>D</kbd> still switches the current site.</p>
+        </details>
+        <details>
+          <summary>Is there an iPhone or iPad version?</summary>
+          <p>It's planned, as part of the same purchase. For now Dimly is for Safari on the Mac.</p>
+        </details>
+        <details>
+          <summary>What is it built on?</summary>
+          <p>The recoloring engine is the open-source <a href="https://github.com/darkreader/darkreader">Dark Reader</a> project (MIT License). Dimly adds the parts that make it work well in Safari: the no-flash start, dark-site detection, readable-text checks, the popup and the per-site fixes.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Elena Trifonova</span>
+    <nav aria-label="Footer"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</footer>
+
+</body>
+</html>
